@@ -51,9 +51,7 @@ def create_rectangle(x, y, a, b, **options):
 
         image = Image.new("RGBA", (a - x, b - y), fill)
 
-        images.append(ImageTk.PhotoImage(image))
-
-        canvas.create_image(x, y, image=images[-1], anchor="nw")
+        canvas.create_image(x, y, image=ImageTk.PhotoImage(image), anchor="nw")
 
         canvas.create_rectangle(x, y, a, b, **options)
 
