@@ -196,6 +196,6 @@ def  randomlymove():
 
     win.after(1000, randomlymove)
 
-
-win.after(500, randomlymove)
+# Uncomment the line below to make the board randomly play moves on it's own.
+# win.after(500, randomlymove)
 win.mainloop()
